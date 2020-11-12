@@ -59,7 +59,7 @@ class ItemModal extends Component {
             Add Todo
           </Button>
         ) : (
-          <h4 className="mb-3 ml-4">Please login to manage items</h4>
+          <h4 className="mb-3 ml-4">Our Todo list!!</h4>
         )}
 
         <Modal isOpen={this.state.modal} toggle={this.toggle}>

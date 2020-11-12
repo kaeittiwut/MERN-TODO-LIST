@@ -36,9 +36,12 @@ class AppNavbar extends Component {
     const authLinks = (
       <Fragment>
         <NavItem>
-          <span className="navbar-text mr-3">
+          <span className="navbar-text text-info mr-2">
             <strong>{user ? `Welcome ${user.name}` : ''}</strong>
           </span>
+        </NavItem>
+        <NavItem>
+          <NavLink href="https://github.com/kaeittiwut">GitHub</NavLink>
         </NavItem>
         <NavItem>
           <Logout />
@@ -49,7 +52,7 @@ class AppNavbar extends Component {
     const guestLinks = (
       <Fragment>
         <NavItem>
-          <NavLink href="https://github.com/kaeittiwut">My GitHub</NavLink>
+          <NavLink href="https://github.com/kaeittiwut">GitHub</NavLink>
         </NavItem>
         <NavItem>
           <RegisterModal />
